@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3521,7 +3521,7 @@ High-power, low thermal resistance package.</description>
 <label x="25.4" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="V_TIMER" class="0">
 <segment>
 <wire x1="208.28" y1="68.58" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
@@ -3532,6 +3532,14 @@ High-power, low thermal resistance package.</description>
 <wire x1="203.2" y1="66.04" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
 <junction x="208.28" y="66.04"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="203.2" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
+<junction x="203.2" y="66.04"/>
+<label x="198.12" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="PA0/ROM-UART-RX"/>
+<wire x1="27.94" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
+<label x="25.4" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TIME_CTL" class="0">
@@ -3728,6 +3736,11 @@ High-power, low thermal resistance package.</description>
 <pinref part="J2" gate="G$1" pin="SHUTDOWN"/>
 <wire x1="33.02" y1="162.56" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
 <label x="35.56" y="162.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="PC7"/>
+<wire x1="27.94" y1="38.1" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
+<label x="25.4" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TRIG" class="0">
