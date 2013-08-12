@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3067,7 +3067,7 @@ High-power, low thermal resistance package.</description>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="A"/>
-<attribute name="TITLE" value="Activator"/>
+<attribute name="TITLE" value="sEHnsor"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -3214,21 +3214,21 @@ High-power, low thermal resistance package.</description>
 <busses>
 </busses>
 <nets>
-<net name="N$5" class="0">
+<net name="RF_P" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="RF_P"/>
 <pinref part="B1" gate="G$1" pin="BAL_P"/>
 <wire x1="78.74" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="RF_N" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="BAL_N"/>
 <pinref part="U4" gate="G$1" pin="RF_N"/>
 <wire x1="109.22" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="ANTENNA" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="ANT"/>
 <wire x1="134.62" y1="78.74" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
