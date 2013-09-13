@@ -66,6 +66,8 @@
 #include "reg.h"
 #include "ieee-addr.h"
 #include "lpm.h"
+#include "spi.h"
+#include "fm25lb.h"
 
 #include <stdint.h>
 #include <string.h>
@@ -83,13 +85,15 @@ set_rime_addr()
 int
 main(void)
 {
+  ioc_init();
+  ioc_set_over(GPIO_A_NUM, 0, IOC_OVERRIDE_ANA);
   nvic_init();
   sys_ctrl_init();
   clock_init();
   lpm_init();
   rtimer_init();
   gpio_init();
-  ioc_init();
+
   spi_init();
   fm25lb_init();
 
@@ -97,10 +101,16 @@ main(void)
 
   watchdog_init();
 
+//#if UART_CONF_ENABLE
+//  uart_init();
+//  uart_set_input(serial_line_input_byte);
+//#endif
+//  serial_line_init();
+
   INTERRUPTS_ENABLE();
 
   /* Initialise the H/W RNG engine. */
-  random_init(0);
+//  random_init(0);
 
   udma_init();
 
@@ -119,8 +129,8 @@ main(void)
 
   //process_start(&sensors_process, NULL);
 
-  energest_init();
-  ENERGEST_ON(ENERGEST_TYPE_CPU);
+//  energest_init();
+//  ENERGEST_ON(ENERGEST_TYPE_CPU);
 
   autostart_start(autostart_processes);
 

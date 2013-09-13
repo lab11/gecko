@@ -76,7 +76,9 @@ typedef uint32_t rtimer_clock_t;
 #define SPI_TXBUF REG(SSI0_BASE + SSI_O_DR)
 #define SPI_RXBUF REG(SSI0_BASE + SSI_O_DR)
 
-#define SPI_WAITFOREOTx()
+#define SPI_WAITFOREOTx() do { \
+  while(REG(SSI0_BASE + SSI_O_SR) & SSI_SR_BSY); \
+} while (0)
 #define SPI_WAITFOREORx() do { \
   while(!(REG(SSI0_BASE + SSI_O_SR) & SSI_SR_RNE)); \
 } while (0)
@@ -111,7 +113,7 @@ typedef uint32_t rtimer_clock_t;
 #endif
 
 #ifndef STARTUP_CONF_VERBOSE
-#define STARTUP_CONF_VERBOSE        0 /**< Set to 0 to decrease startup verbosity */
+#define STARTUP_CONF_VERBOSE        1 /**< Set to 0 to decrease startup verbosity */
 #endif
 /** @} */
 /*---------------------------------------------------------------------------*/
@@ -133,7 +135,7 @@ typedef uint32_t rtimer_clock_t;
  * @{
  */
 #ifndef UART_CONF_ENABLE
-#define UART_CONF_ENABLE            0 /**< Enable/Disable UART I/O */
+#define UART_CONF_ENABLE            1 /**< Enable/Disable UART I/O */
 #endif
 
 #ifndef UART_CONF_BAUD_RATE
@@ -179,7 +181,7 @@ typedef uint32_t rtimer_clock_t;
  * energy savings. The USB will not be initialised either
  */
 #ifndef CC2538_CONF_QUIET
-#define CC2538_CONF_QUIET           1
+#define CC2538_CONF_QUIET           0
 #endif
 
 /* CC2538_CONF_QUIET is hard and overrides all other related defines */
