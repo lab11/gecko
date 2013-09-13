@@ -8,8 +8,8 @@
 #include "dev/watchdog.h"
 #include "dev/serial-line.h"
 #include "dev/sys-ctrl.h"
-#include "fm25lb.h"
-
+#include "spi-arch.h"
+#include "dev/spi.h"
 
 #include <stdio.h>
 #include <stdint.h>
@@ -37,7 +37,6 @@
 #endif
 
 uint8_t spibyte = 0;
-uint16_t address = 0xF0;
 
 static struct etimer periodic_timer;
 
@@ -62,16 +61,12 @@ PROCESS_THREAD(ipv6_process, ev, data)
 
     if (etimer_expired(&periodic_timer)) {
       if (!(spibyte & 0x01)) {
-        fm25lb_read(address, 3, spibuf);
+        SPI_READ(spibuf[0]);
       } else {
-        fm25lb_write(address, 3, spibuf);
+        SPI_WRITE(spibuf[1]);
       }
       spibyte++;
 
-      address++;
-      if (address > 0x1FF) {
-        address = 0x0F0;
-      }
 
       etimer_restart(&periodic_timer);
     }
