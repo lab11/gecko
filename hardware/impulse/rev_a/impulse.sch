@@ -7416,9 +7416,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="274.32" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="P6.0/A0"/>
-<wire x1="86.36" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<label x="88.9" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="U4" gate="G$1" pin="P6.2/A2"/>
+<wire x1="86.36" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
+<label x="88.9" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TIME_CTL" class="0">
@@ -7430,16 +7430,6 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="261.62" y1="233.68" x2="259.08" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="220.98" x2="261.62" y2="233.68" width="0.1524" layer="91"/>
 <junction x="261.62" y="233.68"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="P5.4/MCLK"/>
-<wire x1="86.36" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
-<label x="88.9" y="78.74" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="P6.5/A5"/>
-<wire x1="86.36" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
-<label x="88.9" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="P6.6/A6/DAC0"/>
