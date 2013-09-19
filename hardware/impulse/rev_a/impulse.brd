@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="10" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1768,190 +1768,188 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </autorouter>
 <elements>
 <element name="U$1" library="logos" package="UMICH_SOLID_75MIL" value="UMICH_SOLID_SMALL" x="32.258" y="1.4478" rot="R90"/>
-<element name="J1" library="gecko" package="HEADER1X6/0.05IN" value="GECKO_POWER_SUPPLY_CONN" x="31.369" y="7.747" smashed="yes" rot="R90">
-<attribute name="VALUE" x="31.369" y="13.589" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-</element>
+<element name="J1" library="gecko" package="HEADER1X6/0.05IN" value="GECKO_POWER_SUPPLY_CONN" x="31.369" y="7.747" smashed="yes" rot="R90"/>
 <element name="U2" library="chips" package="TDFN-8" value="FM25LBTDFN-8" x="26.9752" y="8.8572" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="FM25L04B-DGRA-ND" x="26.9752" y="8.8572" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MOUSER" value=" 877-FM25L04B-DG " x="26.9752" y="8.8572" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="24.5952" y="8.0268" size="0.508" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
-<attribute name="VALUE" x="26.9752" y="12.2572" size="1.016" layer="28" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
+<attribute name="VALUE" x="26.9752" y="12.2572" size="0.508" layer="28" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
 </element>
 <element name="U1" library="chips" package="SOT-23" value="DS2411" x="20.5232" y="10.7696" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="DS2411R+CT-ND" x="20.5232" y="10.7696" size="1.016" layer="28" font="vector" ratio="12" rot="MR90" display="off"/>
-<attribute name="VALUE" x="17.9832" y="10.7696" size="1.016" layer="28" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="17.9832" y="10.7696" size="0.508" layer="28" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 <attribute name="NAME" x="20.5232" y="12.3952" size="0.508" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 </element>
 <element name="R6" library="passives" package="0402_RES" value="4.7k" x="28.5238" y="12.4132" smashed="yes" rot="MR180">
 <attribute name="NAME" x="28.5238" y="12.0322" size="0.508" layer="26" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
-<attribute name="VALUE" x="28.5238" y="13.8102" size="1.016" layer="28" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
+<attribute name="VALUE" x="26.9998" y="12.7942" size="0.508" layer="28" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
 </element>
 <element name="R4" library="passives" package="0402_RES" value="4.7k" x="26.5864" y="5.4352" smashed="yes" rot="MR90">
 <attribute name="NAME" x="26.9674" y="5.4352" size="0.508" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="25.1894" y="5.4352" size="1.016" layer="28" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="25.1894" y="5.4352" size="0.508" layer="28" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 </element>
 <element name="R5" library="passives" package="0402_RES" value="4.7k" x="30.201" y="12.4132" smashed="yes" rot="MR0">
 <attribute name="NAME" x="30.2002" y="12.0428" size="0.508" layer="26" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
-<attribute name="VALUE" x="30.201" y="11.0162" size="1.016" layer="28" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="30.201" y="11.0162" size="0.508" layer="28" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 </element>
 <element name="R3" library="passives" package="0402_RES" value="2.2k" x="22.6816" y="10.8188" smashed="yes" rot="MR270">
 <attribute name="NAME" x="23.036" y="10.822" size="0.508" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="24.0786" y="10.8188" size="1.016" layer="28" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
+<attribute name="VALUE" x="24.0786" y="10.8188" size="0.508" layer="28" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 </element>
 <element name="R14" library="passives" package="0402_RES" value="4.7M" x="29.9578" y="11.9236" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.9608" y="12.689" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="28.5608" y="11.9236" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="28.5608" y="11.9236" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="C19" library="passives" package="0402_CAP" value="2.2uF" x="29.1574" y="11.927" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.161" y="12.6856" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-right"/>
-<attribute name="VALUE" x="30.5544" y="11.927" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="30.5544" y="11.927" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="Q1" library="fets" package="XFDFN-3" value="MOSFET-NCHANNELXFDN-3" x="28.1922" y="11.84" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="DMN2400UFB4-7DICT-ND" x="28.1922" y="11.84" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="28.1976" y="12.4652" size="0.508" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="29.6922" y="11.84" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="22" y="10.6938" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C18" library="passives" package="0402_CAP" value="0.1uF" x="25.5826" y="5.436" smashed="yes" rot="MR270">
 <attribute name="NAME" x="25.2016" y="5.436" size="0.508" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
-<attribute name="VALUE" x="26.9796" y="5.436" size="1.016" layer="28" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
+<attribute name="VALUE" x="26.9796" y="5.436" size="0.508" layer="28" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 </element>
 <element name="U3" library="chips" package="S-PVQFN-N64" value="MSP430F1611IRTD" x="21.4884" y="6.0452" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="296-18102-1-ND" x="21.4884" y="6.0452" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="25.0444" y="2.1298" size="0.508" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="15.4884" y="6.0452" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="15.4884" y="6.0452" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="J2" library="epic" package="TC2030-IDC-NL" value="EPIC-PROG-POGO-NO-LEGS" x="29.0576" y="3.302" smashed="yes" rot="R270">
 <attribute name="TAG-CONNECT" value="TC2030-IDC-NL" x="29.0576" y="3.302" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="25.5651" y="3.302" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="26.162" y="2.9591" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="U4" library="chips" package="S-PVQFN-N48" value="CC2420RGZ" x="8.0518" y="6.1976" smashed="yes">
 <attribute name="DIGIKEY" value="296-19585-1-ND" x="8.0518" y="6.1976" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="8.0518" y="10.2176" size="0.508" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="8.0518" y="1.1976" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="8.0518" y="8.6428" size="0.508" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="8.0518" y="1.1976" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C10" library="passives" package="0402_CAP" value="0.1uF" x="27.5844" y="9.652" smashed="yes">
-<attribute name="NAME" x="27.5844" y="9.3472" size="0.508" layer="25" font="vector" ratio="12" align="top-center"/>
-<attribute name="VALUE" x="27.5844" y="8.255" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="27.5844" y="9.2964" size="0.508" layer="25" font="vector" ratio="12" align="top-center"/>
+<attribute name="VALUE" x="27.5844" y="8.255" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C13" library="passives" package="0402_CAP" value="0.1uF" x="27.5844" y="10.5156" smashed="yes">
 <attribute name="NAME" x="28.3464" y="10.5156" size="0.508" layer="25" font="vector" ratio="12" align="center-left"/>
-<attribute name="VALUE" x="27.5844" y="9.1186" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="27.5844" y="9.1186" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="R9" library="passives" package="0402_RES" value="100k" x="27.432" y="7.747" smashed="yes" rot="R90">
 <attribute name="NAME" x="27.432" y="7.0104" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="28.829" y="7.747" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="28.829" y="7.747" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C14" library="passives" package="0402_CAP" value="0.1uF" x="28.321" y="7.747" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.321" y="7.0104" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="29.718" y="7.747" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="29.718" y="7.747" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="R8" library="passives" package="0402_RES" value="100k" x="16.0528" y="7.9248" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.0528" y="7.1374" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="17.4498" y="7.9248" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="17.4498" y="7.9248" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C15" library="passives" package="0402_CAP" value="0.1uF" x="13.7922" y="3.048" smashed="yes">
 <attribute name="NAME" x="14.5796" y="3.048" size="0.508" layer="25" font="vector" ratio="12" align="center-left"/>
-<attribute name="VALUE" x="13.7922" y="1.651" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="13.7922" y="1.651" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C16" library="passives" package="0402_CAP" value="0.1uF" x="8.382" y="11.4808" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.382" y="12.2682" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="9.779" y="11.4808" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="9.779" y="11.4808" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="R13" library="passives" package="0402_RES" value="1M" x="20.3962" y="0.5842" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.3962" y="0.2032" size="0.508" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="20.3962" y="1.9812" size="1.016" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="19.6596" y="0.5842" size="0.508" layer="25" font="vector" ratio="12" rot="R180" align="center-left"/>
+<attribute name="VALUE" x="20.3962" y="1.9812" size="0.508" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 </element>
 <element name="R10" library="passives" package="0402_RES" value="1M" x="11.9634" y="1.8542" smashed="yes">
 <attribute name="NAME" x="12.7508" y="1.8542" size="0.508" layer="25" font="vector" ratio="12" align="center-left"/>
-<attribute name="VALUE" x="11.9634" y="0.4572" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="11.9634" y="0.4572" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="R11" library="passives" package="0402_RES" value="1M" x="22.9616" y="0.6096" smashed="yes">
-<attribute name="NAME" x="22.9616" y="0.2794" size="0.508" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="22.9616" y="-0.7874" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="NAME" x="23.7236" y="0.6096" size="0.508" layer="25" font="vector" ratio="12" align="center-left"/>
+<attribute name="VALUE" x="22.9616" y="0.4826" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="R7" library="passives" package="0402_RES" value="43k" x="6.2992" y="11.4808" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.2992" y="12.2682" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="4.9022" y="11.4808" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="4.9022" y="11.4808" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="R1" library="passives" package="0402_RES" value="2.2" x="9.9314" y="11.9888" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.9314" y="12.7762" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="11.3284" y="11.9888" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="11.3284" y="11.9888" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C20" library="rcl" package="C0805" value="10uF" x="2.4384" y="11.5824" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="478-2561-1-ND" x="2.4384" y="11.5824" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="2.4384" y="12.4206" size="0.508" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="3.7084" y="14.1224" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="3.4544" y="11.8364" size="0.508" layer="27" rot="R180"/>
 </element>
 <element name="C17" library="passives" package="0402_CAP" value="0.1uF" x="13.7922" y="3.9116" smashed="yes">
 <attribute name="NAME" x="14.5796" y="3.9116" size="0.508" layer="25" font="vector" ratio="12" align="center-left"/>
-<attribute name="VALUE" x="13.7922" y="2.5146" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="13.7922" y="2.5146" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C9" library="passives" package="0402_CAP" value="0.1uF" x="13.589" y="8.255" smashed="yes">
 <attribute name="NAME" x="14.4018" y="8.255" size="0.508" layer="25" font="vector" ratio="12" align="center-left"/>
-<attribute name="VALUE" x="13.589" y="6.858" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="13.589" y="6.858" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C4" library="passives" package="0402_CAP" value="68pF" x="8.2804" y="1.0668" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.2804" y="0.3048" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="9.6774" y="1.0668" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="10.1854" y="1.8288" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C11" library="passives" package="0402_CAP" value="0.1uF" x="7.2136" y="1.0668" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.2136" y="0.3048" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="5.8166" y="1.0668" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="5.8166" y="1.5748" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="C12" library="passives" package="0402_CAP" value="0.1uF" x="3.302" y="9.4234" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.302" y="8.636" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="4.699" y="9.4234" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="4.699" y="9.4234" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C8" library="passives" package="0402_CAP" value="0.01uF" x="5.8166" y="1.0668" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.8166" y="0.3048" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="4.4196" y="1.0668" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="4.9276" y="1.5748" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="C5" library="passives" package="0402_CAP" value="68pF" x="13.589" y="8.9916" smashed="yes">
 <attribute name="NAME" x="14.4018" y="8.9916" size="0.508" layer="25" font="vector" ratio="12" align="center-left"/>
-<attribute name="VALUE" x="13.589" y="7.5946" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="13.589" y="7.5946" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C6" library="passives" package="0402_CAP" value="68pF" x="7.366" y="11.4808" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.366" y="12.2682" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="8.763" y="11.4808" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="8.763" y="11.4808" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C7" library="passives" package="0402_CAP" value="68pF" x="5.2832" y="11.4808" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.2832" y="12.2428" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="6.6802" y="11.4808" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="6.6802" y="11.4808" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="A1" library="chips" package="MOLEX-47948-ANTENNA" value="MOLEX-2.4GHZ-047948" x="2.2606" y="1.905" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="WM4893CT-ND" x="2.2606" y="1.905" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="2.2606" y="0.676" size="0.508" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="5.4356" y="1.905" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="8.509" y="2.6924" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="X1" library="crystals" package="TXC-7V" value="TXC-7V" x="14.3256" y="11.2268" smashed="yes">
 <attribute name="NAME" x="14.3256" y="12.8712" size="0.508" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="14.3256" y="8.0518" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="14.3256" y="8.0518" size="0.508" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="C2" library="passives" package="0402_CAP" value="22pF" x="11.938" y="11.9888" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.938" y="12.7762" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="13.335" y="11.9888" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="13.335" y="11.9888" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C3" library="passives" package="0402_CAP" value="22pF" x="16.7386" y="11.9888" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.7386" y="12.827" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="15.3416" y="11.9888" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="15.3416" y="11.9888" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="R12" library="passives" package="0402_RES" value="1M" x="26.5684" y="11.684" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.56840625" y="12.445996875" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="27.965403125" y="11.684" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="27.965403125" y="11.684" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="C1" library="passives" package="0402_CAP" value="12pF" x="1.5494" y="7.2898" smashed="yes" rot="R90">
 <attribute name="NAME" x="1.5494" y="8.0772" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="2.9464" y="7.2898" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="2.9464" y="7.2898" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="L1" library="passives" package="0402_CAP" value="INDUCTOR0402" x="2.8448" y="5.9436" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="712-1419-1-ND" x="2.8448" y="5.9436" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="3.2258" y="5.9436" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="1.4478" y="5.9436" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="NAME" x="3.175" y="5.9436" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="1.4478" y="5.9436" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="B1" library="chips" package="BD2425N50200A" value="BD2425N50200A" x="1.8034" y="5.9436" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="1173-1063-1-ND" x="1.8034" y="5.9436" size="0.508" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="1.143" y="5.9436" size="0.508" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="3.7084" y="5.9436" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="3.7084" y="5.9436" size="0.508" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="" x="29.9974" y="8.8392" smashed="yes" rot="R180">
 <attribute name="NAME" x="29.9847" y="7.6454" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
@@ -1959,7 +1957,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="R2" library="passives" package="0402_RES" value="470" x="29.1084" y="8.8392" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.1084" y="8.0772" size="0.508" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="27.7114" y="8.8392" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="27.7114" y="8.8392" size="0.508" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 </elements>
 <signals>
