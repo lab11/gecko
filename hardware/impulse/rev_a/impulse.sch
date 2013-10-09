@@ -8080,7 +8080,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="101.6" y1="35.56" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="N$10" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="48.26" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
