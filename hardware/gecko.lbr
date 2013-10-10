@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -698,6 +698,23 @@ MAX3223-MAX3243.pdf</description>
 <text x="-14.732" y="6.096" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="-14.732" y="-7.366" size="1.016" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 </package>
+<package name="HEADER1X9/0.05IN">
+<wire x1="-5.842" y1="0.762" x2="-5.842" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-5.842" y1="-0.762" x2="5.842" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="5.842" y1="-0.762" x2="5.842" y2="0.762" width="0.127" layer="21"/>
+<wire x1="5.842" y1="0.762" x2="-5.842" y2="0.762" width="0.127" layer="21"/>
+<pad name="0" x="-1.27" y="0" drill="0.7112" diameter="1.016" shape="square" first="yes"/>
+<pad name="1" x="0" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="2" x="1.27" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="3" x="2.54" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="4" x="3.81" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="5" x="5.08" y="0" drill="0.7112" diameter="1.016"/>
+<text x="-8.636" y="0" size="1.016" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="7.112" y="0" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;VALUE</text>
+<pad name="-1" x="-2.54" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="-2" x="-3.81" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="-3" x="-5.08" y="0" drill="0.7112" diameter="1.016"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MN1382S">
@@ -1149,6 +1166,23 @@ MAX3223-MAX3243.pdf</description>
 <text x="2.54" y="-2.54" size="1.27" layer="96" rot="MR180">&gt;VALUE</text>
 <pin name="A" x="0" y="5.08" visible="off" length="short" rot="R270"/>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+</symbol>
+<symbol name="IMPULSE_GECKO_HEADER">
+<wire x1="-10.16" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="VCAP" x="10.16" y="10.16" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="VREG" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="OVRVLT/P1.7" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="SHTDWN/P2.0" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="TRIGGER/P2.1" x="10.16" y="-2.54" length="short" rot="R180"/>
+<text x="-10.16" y="13.462" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-22.352" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="MOSI/SDA" x="10.16" y="-12.7" length="short" rot="R180"/>
+<pin name="MISO" x="10.16" y="-15.24" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="-17.78" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1704,6 +1738,30 @@ MAX3223-MAX3243.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="POS"/>
 <connect gate="G$1" pin="C" pad="NEG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IMPULSE_GECKO_HEADER" prefix="J">
+<description>Header on the impulse EPIC-esque board.</description>
+<gates>
+<gate name="G$1" symbol="IMPULSE_GECKO_HEADER" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="HEADER1X9/0.05IN">
+<connects>
+<connect gate="G$1" pin="GND" pad="0"/>
+<connect gate="G$1" pin="MISO" pad="-2"/>
+<connect gate="G$1" pin="MOSI/SDA" pad="-1"/>
+<connect gate="G$1" pin="OVRVLT/P1.7" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="-3"/>
+<connect gate="G$1" pin="SHTDWN/P2.0" pad="3"/>
+<connect gate="G$1" pin="TRIGGER/P2.1" pad="2"/>
+<connect gate="G$1" pin="VCAP" pad="5"/>
+<connect gate="G$1" pin="VREG" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
