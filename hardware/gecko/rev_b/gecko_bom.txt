@@ -1,0 +1,30 @@
+Partlist exported from /Users/lohityerva/Dropbox/Eagle/Gecko/Gecko with VREG revB/Gecko.sch at 6/14/12 10:16 PM
+
+Qty Value               ,   Device           ,  Parts                           
+1,                      ,    LED0603          ,  LED1                                                          
+*,  0Ohm Resistor      ,    ******       	,  SCAP1                            
+4 ,  .1uF              ,     CAP0603-CAP      ,  C10, C11, C7, C8                          
+7 ,  1K                ,     R-US_R0603       ,  R13, R20, R10, R11, R17, R28, R23                             
+1 ,  1nF               ,     CAP0603-CAP      ,  C20                              
+1 ,  4.7uF             ,     CAP0603-CAP      ,  C18                              
+1 ,  4.7uH             ,     INDUCTOR        ,   L3                               
+2 ,  10nF              ,     CAP0603	     ,     C4, C21                          
+3 ,  10uF              ,     CAP0805         ,   C14, C16, C19                    
+1 ,  10uH              ,     L-USL2012C      ,   L1                               
+1 ,  47K               ,     RESISTOR0603-RES ,  R4                               
+10,  100K              ,     R-US_R0603       ,  R18, R2, R3, R5, R8, R9, R16, R19, R27, R22                                                           
+5 ,  100uF             ,     C-USC1206        ,  C1, C2, C5, C6, C9               
+1 ,  470               ,     RESISTOR          , R12                              
+1 ,  562K              ,     RESISTOR0603-RES ,  R7                               
+1 ,  976K              ,     RESISTOR0603-RES ,  R6                               
+1 ,  1382S 2.2V        ,     1382             ,  S4                               
+1 ,  BUTTON_CELL       ,     BUTTON_CELL      ,  B1                                                           
+1 ,  EPIC-CORE_A       ,     EPIC-CORE_A      ,  U1                                                             
+4 ,  PMOS       	,		   PMOSSOT23      ,    Q6, Q3, Q1, Q4                              
+2 ,  NMOS	         ,      MOSFET-NCHANNELSMD, Q7, Q5, Q2                                                            
+1 ,  MCP1640         ,       MCP1640         ,   U2                                                         
+1 ,  PCF2127A         ,      PCF2127A        ,   U3                                                                                                                          
+1 ,  SOLAR_CELL_MOUNT ,      SOLAR_CELL_MOUNT,   SCM1                             
+2 ,  TC54VC 2.9V      ,      1382            ,   S1, S3                           
+1 ,  TC1047A          ,      TC1047A         ,   TEMP                                                           
+1 ,  TSL237T          ,      TSL237T         ,   U4                               
