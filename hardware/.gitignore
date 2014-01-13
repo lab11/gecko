@@ -1,3 +1,15 @@
+*.DIM
+*.GBL
+*.GBO
+*.GBP
+*.GBS
+*.GTL
+*.GTO
+*.GTP
+*.GTS
+*.ML1
+*.ML2
+*.TXT
 *.bsp
 *.tsp
 *.top
